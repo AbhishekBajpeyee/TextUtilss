@@ -13,8 +13,8 @@ export default function Navbar(props) {
   <>
     <nav className={`navbar bg-${props.mode} border-bottom border-body`} data-bs-theme={`${props.mode}`}> 
     <div className="container-fluid"   >
-      {/* <Link className="navbar-brand"   to="/">{props.title}</Link> */}
-      <a className="navbar-brand"   href="#">{props.title}</a>
+      <Link className="navbar-brand"   to="/home">{props.title}</Link>
+      {/* <a className="navbar-brand"   href="#">{props.title}</a> */}
       <div  className="form-check form-switch container " >
   <input  className="form-check-input  mx-6" onClick={props.toggleMode} type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
   <label  className={`form-check-label text-${props.mode==='light'? 'dark':'light'}`} htmlFor="flexSwitchCheckDefault">Enable {props.mode==='light'? 'dark':'light'} Mode</label>
@@ -26,13 +26,13 @@ export default function Navbar(props) {
       <div className="collapse navbar-collapse" id="navbarSupportedContent"  >
         <ul className="navbar-nav me-auto mb-2 mb-lg-0"  >
           <li className="nav-item"  >
-            {/* <Link  className="nav-link"  rel="stylesheet" to="/" >Home</Link> */}
-            <a  className="nav-link"  rel="stylesheet" href="#" >Home</a>
+            <Link  className="nav-link"  rel="stylesheet" to="/" >Home</Link>
+            {/* <a  className="nav-link"  rel="stylesheet" href="#" >Home</a> */}
             {/* if we use a aur href then side fill reload on evigating */}
           </li>
           <li className="nav-item"  >
-            {/* <Link className="nav-link" to="/about"  >{props.AboutText}</Link> */}
-            <a className="nav-link" href="#"  >{props.AboutText}</a>
+            <Link className="nav-link" to="/about"  >{props.AboutText}</Link>
+            {/* <a className="nav-link" href="#"  >{props.AboutText}</a> */}
           </li>
           
           

@@ -6,20 +6,7 @@ export default function About(props) {
     color: 'black',
     backgroundColor: 'white'
   })
-  const toggleStyle = () => {
-    if(myStyle.color === 'white') {
-      setMyStyle({
-        color: 'black',
-        backgroundColor: 'white'
-      })
-    }
-    else {
-      setMyStyle({
-        color: 'white',
-        backgroundColor: 'black'
-      })
-    }
-  }
+ 
 
 
   return (
@@ -63,7 +50,6 @@ export default function About(props) {
               </div>
             </div>
           </div>
-          <button onClick={toggleStyle} type="button" className="btn btn-primary">Dark Mode</button>
         </div>
       </div>
 
