@@ -5,13 +5,13 @@ import TextForm from './components/TextForm';
 import Alert from './components/Alert';
 import React, { useState } from 'react'
 // react router is used to neviigate the pges withouut uploading the pages agaon and again 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Routes,
-  // Link
-} from "react-router-dom"
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
+//   Routes,
+//   // Link
+// } from "react-router-dom"
 
 
 function App() {
@@ -52,28 +52,28 @@ function App() {
     // (2) to use two tags inside jsx we use JSX FRAGMENTS <>  </>
 
     <>
-    <Router>
+    {/* <Router> */}
         <Navbar title="TextUtils" AboutText="AboutUs" mode={mode} toggleMode={toggleMode} />
         <Alert alert={alert} />
         {/* using navbar component by importing above and passi ng props as type  */}
         <div className="container">
        
 
-        <Routes>
-          			<Route exact path="/about" element={    <About heading="About Us" mode={mode} />} /> 
+        {/* <Routes> */}
+          			{/* <Route exact path="/about" element={    <About heading="About Us" mode={mode} />} />  */}
                 {/* exact is usede for exact matching means suppose we ther are     /user ----> component1
                         /user/about -----> component2 then on clicking /user/about it may render to component1 bcz of partial matching  */}
-          			<Route exact path="/" element={<TextForm showalert={showAlert} heading="Write Your Thaught" Title="Enter the text to analyze" mode={mode} />} />
-        		</Routes>
+          			{/* <Route exact path="/" element={<TextForm showalert={showAlert} heading="Write Your Thaught" Title="Enter the text to analyze" mode={mode} />} /> */}
+        		{/* </Routes> */}
 
 
 
 
-          {/* <TextForm showalert={showAlert}heading="Write Your Thaught" Title="Enter the text to analyze" mode={mode} /> */}
-          {/* <About heading="About Us" mode={mode} /> */}
+          <TextForm showalert={showAlert}heading="Write Your Thaught" Title="Enter the text to analyze" mode={mode} /> 
+           <About heading="About Us" mode={mode} />
 
         </div>
-          </Router>
+          {/* </Router> */}
     </>
   );
 }
