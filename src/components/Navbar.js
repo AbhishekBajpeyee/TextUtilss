@@ -13,7 +13,7 @@ export default function Navbar(props) {
   <>
     <nav className={`navbar bg-${props.mode} border-bottom border-body`} data-bs-theme={`${props.mode}`}> 
     <div className="container-fluid"   >
-      <Link className="navbar-brand"   to="/home">{props.title}</Link>
+      <Link className="navbar-brand"   to="/">{props.title}</Link>
       {/* <a className="navbar-brand"   href="#">{props.title}</a> */}
       <div  className="form-check form-switch container " >
   <input  className="form-check-input  mx-6" onClick={props.toggleMode} type="checkbox" role="switch" id="flexSwitchCheckDefault"/>

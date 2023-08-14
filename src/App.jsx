@@ -62,7 +62,7 @@ function App() {
           			<Route exact path="/about" element={    <About heading="About Us" mode={mode} />} /> 
                 {/* exact is usede for exact matching means suppose we ther are     /user ----> component1
                         /user/about -----> component2 then on clicking /user/about it may render to component1 bcz of partial matching  */}
-          			<Route exact path="/" element={<TextForm showalert={showAlert} heading="Write Your Thaught" Title="Enter the text to analyze" mode={mode} />} />
+          			<Route exact path="/" element={ <TextForm showalert={showAlert} heading=   "Write Your Thaught"  Title="TextUtils- Word Counter ,Character Counter, Remove extra spaces" mode={mode} /> } />
         		</Routes>
 
 
